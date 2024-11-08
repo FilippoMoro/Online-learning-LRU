@@ -464,7 +464,8 @@ class RNN(nn.Module):
         return grad
 
 
-class GRUOnlineCell(nn.recurrent.RNNCellBase, metaclass=nn.recurrent.RNNCellCompatibilityMeta):
+# class GRUOnlineCell(nn.recurrent.RNNCellBase, metaclass=nn.recurrent.RNNCellCompatibilityMeta):
+class GRUOnlineCell(nn.recurrent.RNNCellBase):
     """
     GRU layer that updates internal elegibility traces to allow online learning.
     """
